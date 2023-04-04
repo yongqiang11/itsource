@@ -82,3 +82,12 @@ for i in range(1, 6):
 # 循环打印5次
 for i in range(4):
     print(f'hell0 world{i}')
+
+print('--' * 20)
+
+names = [['张飞', "刘备", "关羽"], ["曹操", "典韦", "司马懿"]]
+li = []
+for name_list in names:
+    for name in name_list:
+        li.append(name)
+print(li)
