@@ -80,3 +80,17 @@ print(tuple1.count(1))
 
 print(dir(()))  # dir()查询对象的属性和方法
 print(dir([]))  # dir()查询对象的属性和方法
+
+print('--' * 20)
+tuple4 = (1, 2, 'hello')
+a, b, c =tuple4
+print(type(a))
+print(b)
+print(c)
+
+# TODO 高级拆包
+values = 1, 2, 3, 4, 'hello'
+a, b, *_ =values
+print(a, b)
+print(_)
+# 该功能使用了特殊的语法*_（其中_就是一个变量名，你可以取任何你想要的名字），值得注意的是，无论原对象是元组，列表，还是字符串等，_返回的都是一个列表

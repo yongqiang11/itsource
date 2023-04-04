@@ -91,3 +91,22 @@ for name_list in names:
     for name in name_list:
         li.append(name)
 print(li)
+
+print('--' * 20)
+
+# 作业
+'''
+words = ['python', 'mysql', '3']
+msg = input('输入你的信息: ')
+for word in words:
+    msg = msg.replace(word, "*" * len(word))
+print(msg)
+'''
+
+print('--' * 20)
+# 作业2
+while True:
+    msg = input('输入你的内容：')
+    if msg == 'quit':
+        break
+    print(len(msg), msg)

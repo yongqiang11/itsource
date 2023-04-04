@@ -49,10 +49,11 @@ print(list2)
 list2.append([1, 2, 3])
 print(list2)
 
-print('==' * 20 )
+print('==' * 20)
+
 # list.extend()  将数据（list|str）中的元素依次添加到列表末尾
 list3 = ['python', 'linux', 'mysql']
-list3.extend([1, 2, 3,])
+list3.extend([1, 2, 3, ])
 print(list3)
 list3.extend('hello')
 print(list3)
@@ -81,7 +82,6 @@ print(num)
 num2 = list3.pop(-2)
 print(list3)
 print(num2)
-
 
 # list.clear()  清空列表,返回空列表
 list3 = ['python', 'linux', 'mysql', 'shell']
@@ -125,10 +125,9 @@ print('==' * 20)
 # TODO 列表-排序
 
 # list.sort()  升序排序
-list1 = ['q',  'a', 'w', 'd']
+list1 = ['q', 'a', 'w', 'd']
 list1.sort()
 print(list1)
-
 
 # list.sort(reverse=True) 降序排列
 
@@ -248,6 +247,10 @@ for i in list1:
     # print(i)
     for j in i:
         print(j)
+# TODO # 列表拆包
+# 嵌套元组拆包
 
-
+info = ['abc', 'we']
+num1, letter = info
+print(letter)
 
