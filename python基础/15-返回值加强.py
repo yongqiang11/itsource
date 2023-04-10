@@ -52,5 +52,25 @@ def fn3(a, b):
 
 print(fn3(1, 2))
 
-# TODO 同时返回多个值
+print('==' * 20)
 
+# TODO 同时返回多个值
+'''
+说明：
+1.返回多个值使用逗号隔开
+2.返回的多个值会收集到一个元组类型中
+
+'''
+
+
+def fn4(name, age, addr):
+    return name, age, addr, 1 + 1
+
+
+t1 = fn4('lisi', 20, '成都')
+print(t1)
+
+
+# 函数返回多个值，一般是做拆包处理
+name, age, addr, num = fn4('小李', 19, '成都')
+print(name)
