@@ -41,13 +41,13 @@ content = f.read(3)
 print(content)
 f.close()
 
-# 将bytes型转成字符串类型 bytes.decode()
+# 将二进制型转成字符串类型 binary.decode()
 print(type(content))
 byte = content.decode()
 print(byte)
 print(type(byte))
 print('--' * 20)
-# 将字符串类型转成bytes型 str.encode()
+# 将字符串类型转成二进制型 str.encode()
 print(byte.encode())
 
 print('--' * 20)
@@ -85,7 +85,10 @@ f = open('demo.txt', encoding='utf8')
 # 以上代码会在打印出现\n换行符
 
 
-data = f.read().splitlines()    # 按照行('\r', '\r\n', \n')分隔字符串，返回一个包含各行作为元素的列表
+data = f.read().splitlines()
 print(data)
 f.close()
 
+# splitlines(keepends)
+# 默认splitelines参数keepends为False，意思是不保留每行结尾的\n, 而keepends为True时，分割的每 一行里尾部会有\n
+# 按照行('\r', '\r\n', \n')分隔字符串，返回一个包含各行作为元素的列表
