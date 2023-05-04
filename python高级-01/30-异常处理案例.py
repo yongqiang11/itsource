@@ -21,4 +21,3 @@ else:
 
 finally:
     f.close()
-
