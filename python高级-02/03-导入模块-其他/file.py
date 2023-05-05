@@ -62,9 +62,14 @@ class File:
         os.rename(filename, new_filename)
 
 
+# print(__name__)
+
+
 if __name__ == '__main__':
     # 测试模块中功能的代码
     print('file被执行了')
+
+
 
 # 第一种：当前模块当作脚本执行，__name__的值：__main__
 # 第二种：当前模块当作模块被调用执行，__name__的值：当前模块名

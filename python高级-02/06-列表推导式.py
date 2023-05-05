@@ -51,3 +51,27 @@ odd_list3 = [i for i in range(1, 11) if i % 2 != 0]
 print(odd_list3)
 
 
+# 需求： 打印10个hello
+
+list1 = ['hello' for i in range(10)]
+print(list1)
+
+
+list2 = ['hello' + str(i) for i in range(10)]
+print(list2)
+
+list2 = [i ** 2 for i in range(10)]
+print(list2)
+
+print( '--' * 20)
+
+# 需求： [(1, 1), (1, 2), (2, 1), (2, 2)]
+list3 = []
+for i in range(1, 3):
+    for j in range(1, 3):
+        list3.append((i, j))
+
+print(list3)
+
+list4 = [(i, j) for i in range(1, 3) for j in range(1, 3)]
+print(list4)

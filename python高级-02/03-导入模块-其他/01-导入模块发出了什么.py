@@ -10,8 +10,9 @@
 """
 
 import module_a
-
 print(module_a.name)
+
+
 
 
 # 因为import的功能是  引入模块并执行里面的代码
