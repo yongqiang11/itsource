@@ -11,24 +11,27 @@
 import datetime
 
 
-# 装饰器
+a = 1
+b = 2
+c = (3, 5)
 
+# 装包
 
-# 定义装饰器
+tuple1 = a, b, *c
+print(type(tuple1))
+print(tuple1)
+list2 = list(tuple1)
+print(list2)
 
-def fun2(fn):
-    def inner():
-        print('前置')
-        fn()
-        print('后置')
+set1 = set(tuple1)
+print(set1)
+print(type(set1))
+#
+# dict1 = dict(tuple1)
+# print(dict1)
+# print(type(dict1))
 
-    return inner
-
-
-# @fun2
-def fun1():
-    print('哈哈哈')
-
-
-
-fun1()
+print('==' * 20)
+list1 = [1, 2, 3, 4]
+c, d, *e = list1
+print(c, d, e)
