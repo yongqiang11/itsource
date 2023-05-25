@@ -16,7 +16,7 @@ random模块用于生成随机数
 random.random()  -->随机生成0~1的浮点数 [0, 1)不包含1
 random.randit(a, b)  -->随机生成a~b的整数  [a, b]包含a,b  b>a 
 random.choice(序列)    -->从序列中随机取一个元素
-random.sample(序列， k)  --从一个序列中取出K个数据,k个元素以列表形式保存
+random.sample(序列， k)  --从一个序列中取出K个随机数据,k个元素以列表形式保存
 
 """
 import random
